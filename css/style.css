@@ -12,12 +12,14 @@
     --accent-cyan: #00d2ff;
     --accent-blue: #0066ff;
     --accent-purple: #a100ff;
+    --accent-emerald: #10b981;
     
     --gradient-primary: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
     --gradient-text: linear-gradient(90deg, var(--accent-cyan), #3b82f6, var(--accent-purple));
     
     --shadow-cyan: 0 0 20px rgba(0, 210, 255, 0.2);
     --shadow-purple: 0 0 20px rgba(161, 0, 255, 0.2);
+    --shadow-emerald: 0 0 20px rgba(16, 185, 129, 0.2);
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -268,6 +270,11 @@ main {
     border: 1px solid rgba(0, 102, 255, 0.15);
 }
 
+.emerald-glow {
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
 .purple {
     color: var(--accent-purple);
     filter: drop-shadow(0 0 4px var(--accent-purple));
@@ -281,6 +288,11 @@ main {
 .blue {
     color: var(--accent-blue);
     filter: drop-shadow(0 0 4px var(--accent-blue));
+}
+
+.emerald {
+    color: var(--accent-emerald);
+    filter: drop-shadow(0 0 4px var(--accent-emerald));
 }
 
 .card h3 {
@@ -332,6 +344,11 @@ main {
     box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
 }
 
+.card:nth-child(4):hover {
+    border-color: var(--accent-emerald);
+    box-shadow: var(--shadow-emerald);
+}
+
 .card:nth-child(1):hover .card-icon-wrapper {
     background: var(--accent-purple);
     border-color: var(--accent-purple);
@@ -345,6 +362,11 @@ main {
 .card:nth-child(3):hover .card-icon-wrapper {
     background: var(--accent-blue);
     border-color: var(--accent-blue);
+}
+
+.card:nth-child(4):hover .card-icon-wrapper {
+    background: var(--accent-emerald);
+    border-color: var(--accent-emerald);
 }
 
 .card:hover .card-icon {
@@ -363,6 +385,10 @@ main {
 
 .card:nth-child(3):hover .card-action {
     color: var(--accent-blue);
+}
+
+.card:nth-child(4):hover .card-action {
+    color: var(--accent-emerald);
 }
 
 .card:hover .card-action i {
