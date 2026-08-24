@@ -263,6 +263,11 @@ main {
     border: 1px solid rgba(0, 210, 255, 0.15);
 }
 
+.blue-glow {
+    background: rgba(0, 102, 255, 0.05);
+    border: 1px solid rgba(0, 102, 255, 0.15);
+}
+
 .purple {
     color: var(--accent-purple);
     filter: drop-shadow(0 0 4px var(--accent-purple));
@@ -271,6 +276,11 @@ main {
 .cyan {
     color: var(--accent-cyan);
     filter: drop-shadow(0 0 4px var(--accent-cyan));
+}
+
+.blue {
+    color: var(--accent-blue);
+    filter: drop-shadow(0 0 4px var(--accent-blue));
 }
 
 .card h3 {
@@ -317,6 +327,11 @@ main {
     box-shadow: var(--shadow-cyan);
 }
 
+.card:nth-child(3):hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+}
+
 .card:nth-child(1):hover .card-icon-wrapper {
     background: var(--accent-purple);
     border-color: var(--accent-purple);
@@ -325,6 +340,11 @@ main {
 .card:nth-child(2):hover .card-icon-wrapper {
     background: var(--accent-cyan);
     border-color: var(--accent-cyan);
+}
+
+.card:nth-child(3):hover .card-icon-wrapper {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
 }
 
 .card:hover .card-icon {
@@ -339,6 +359,10 @@ main {
 
 .card:nth-child(2):hover .card-action {
     color: var(--accent-cyan);
+}
+
+.card:nth-child(3):hover .card-action {
+    color: var(--accent-blue);
 }
 
 .card:hover .card-action i {
